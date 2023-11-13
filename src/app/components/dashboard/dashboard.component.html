@@ -106,19 +106,24 @@
                   <thead>
                       <tr>
                           <th scope="col">#</th>
-                          <th scope="col">Firstname</th>
-                          <th scope="col">Lastname</th>
-                          <th scope="col">Username</th>
+                          <th scope="col">Identificacion</th>
+                          <th scope="col">Nombre</th>
+                          <th scope="col">Apellidos</th>
+                          <th scope="col">Full Nombre</th>
                           <th scope="col">Email</th>
+                          <th scope="col">full Identificacion</th>
                       </tr>
                   </thead>
                   <tbody>
                       <tr *ngFor="let user of users; let i= index">
                           <td>{{i+1}}</td>
-                          <td>{{user.firstName}}</td>
-                          <td>{{user.lastName}}</td>
-                          <td>{{user.username}}</td>
+                          <td>{{user.nroIdentificacion}}</td>
+                          <td>{{user.nombres}}</td>
+                          <td>{{user.apellidos}}</td>
+                          
+                          <td>{{user.nombres}} {{user.apellidos}}</td>
                           <td>{{user.email}}</td>
+                          <td>{{user.identificacionConcatenada}}</td>
                       </tr>
 
                   </tbody>
