@@ -1,14 +1,13 @@
-<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="#">Usuario <h3>{{fullName}}</h3></a>
-  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<header class="navbar navbar-ligth sticky-top bg-light flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="#"><h2>{{fullName}}</h2></a>
+   
+
   <div class="navbar-nav">
       <div class="nav-item text-nowrap">
-          <a style="background: red;
+          <a style="background: rgb(73, 91, 248);
           color: #fff;
           border-radius: 4px;
-          margin: 10px;" class="nav-link px-3 cursor-pointer" (click)="logout()">Salir</a>
+          margin: 10px;" class="nav-link px-3 cursor-pointer" (click)="logout()">Regresar</a>
       </div>
   </div>
 </header>
@@ -93,14 +92,14 @@
               </div>
           </div>
           <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-              <h1 class="h2">Panel de usuarios</h1>
+              
               <div class="btn-toolbar mb-2 mb-md-0">
                   
                  
               </div>
           </div>
 
-          <h2>Usuarios</h2><br>
+          <h2>Lista Registros</h2><br>
           <div class="table-responsive">
               <table class="table table-striped table-sm">
                   <thead>
@@ -109,9 +108,9 @@
                           <th scope="col">Identificacion</th>
                           <th scope="col">Nombre</th>
                           <th scope="col">Apellidos</th>
-                          <th scope="col">Full Nombre</th>
+                          <th scope="col"> Nombre Completo</th>
                           <th scope="col">Email</th>
-                          <th scope="col">full Identificacion</th>
+                          <th scope="col">Identificacion Tipo</th>
                       </tr>
                   </thead>
                   <tbody>

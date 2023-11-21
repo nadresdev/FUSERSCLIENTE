@@ -1,10 +1,18 @@
+<header class="navbar navbar-ligth sticky-top bg-light flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="#"><h2>Double V Parthners</h2></a>
+     
+  
+    <div class="navbar-nav">
+        <div class="text-center pt-4 text-muted">Tienes una cuenta? <a id="forgot" routerLink="/login" href="#">Ingresa</a> </div>
+    </div>
+  </header>
 <div class="outer">
   <div class="container">
       <div class="row">
           <div class="offset-md-2 col-lg-5 col-md-7 offset-lg-4 offset-md-3">
               <div class="panel border bg-white">
                   <div class="panel-heading">
-                      <h3 class="pt-3 font-weight-bold">Sign Up</h3>
+                      <h3 class="pt-3 font-weight-bold">Registro</h3>
                   </div>
                   <div class="panel-body p-3">
                       <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
@@ -18,18 +26,14 @@
                           </div>
                           <small *ngIf="signUpForm.controls['apellidos'].dirty && signUpForm.hasError('required','apellidos')" class="text-danger">*apellidos requeridos*</small>
                           
-                          <!--<div class="form-group pt-3">
-                            <div class="input-field" [class.error]="signUpForm.controls['tipoIdentificacion'].dirty && signUpForm.hasError('required','tipoIdentificacion')"> <span class="fa fa-user p-2"></span> <input formControlName="tipoIdentificacion" type="text" placeholder="Tipo Identificacion"> </div>
-                        </div>
-                        <small *ngIf="signUpForm.controls['tipoIdentificacion'].dirty && signUpForm.hasError('required','tipoIdentificacion')" class="text-danger">*Tipo de identificación Es obligatorio*</small>
-                    -->
+                        
                     <div class="form-group pt-3" >
                         <p class="label">Tipo Identificación</p>
                         <select class="form-select"   input formControlName="tipoIdentificacion"  >
                            
-                            <option value="CC">CC</option>
-                            <option value="C.EXTRANJERIA">C.EXTRANJERIA</option>
-                            <option value="TI">T.I</option>
+                            <option value="Cédula">Cédula</option>
+                            <option value="Pasaporte">Pasaporte</option>
+                            <option value="C. Extranjería">C.Extranjería</option>
                           </select>
                         </div>
 
@@ -57,8 +61,7 @@
                           <small *ngIf="signUpForm.controls['password'].dirty && signUpForm.hasError('required','password')" class="text-danger">*Password ES OBLIGATORIO*</small>
 
                           <button type="submit" class="btn btn-primary btn-block mt-4 w-100">Registrarse</button>
-                          <div class="text-center pt-4 text-muted">Ya tienes una cuenta? <a id="forgot" routerLink="/login" href="#">Ingresa</a> </div>
-                      </form>
+                             </form>
                   </div>
 
               </div>

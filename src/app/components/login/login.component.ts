@@ -38,9 +38,7 @@ export class LoginComponent implements OnInit {
   }
   onSubmit() {
     if (this.loginForm.valid) {
-      
       console.log(this.loginForm.value);
-
       this.auth.signIn(this.loginForm.value).subscribe({
         next: (res) => {
           console.log(res.message);
@@ -50,11 +48,11 @@ export class LoginComponent implements OnInit {
           const tokenPayload = this.auth.decodedToken();
           this.userStore.setFullNameForStore(tokenPayload.name);
           this.userStore.setRoleForStore(tokenPayload.role);
-          this.toast.success({detail:"BIENVENIDO!" , summary:res.message, duration: 5000});
+          this.toast.success({detail:"Logeado con éxito!" , summary:res.message, duration: 5000});
           this.router.navigate(['dashboard'])
         },
         error: (err) => {
-          this.toast.error({detail:"ERROR", summary:"Algo salió mal!", duration: 5000});
+          this.toast.error({detail:"ERROR", summary:"Algo salio mal!", duration: 5000});
           console.log(err);
         },
       });

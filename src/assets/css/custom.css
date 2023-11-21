@@ -5,18 +5,24 @@
 
 .outer {
     height: 100vh;
-    background: linear-gradient(to top, #c9c9ff 50%, #6e6ef6 90%) no-repeat;
+    background: linear-gradient(to left, #f7f7fa 50%, #fcfaf7 90%) no-repeat;
 }
 
 .panel-heading {
     text-align: center;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    margin-left: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #300999;
+    font-style: normal;
+
 }
 
 #forgot {
     min-width: 100px;
     margin-left: auto;
-    text-decoration: none;
+    margin-right: auto;
+    text-decoration: solid;
     cursor: pointer;
 }
 
@@ -49,7 +55,7 @@ a:hover {
     align-items: center;
     cursor: pointer;
     border: 1px solid #ddd;
-    color: #4343ff
+    color: #6868a0
 }
 
 .input-field.error {

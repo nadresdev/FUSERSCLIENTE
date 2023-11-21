@@ -1,3 +1,13 @@
+
+<header class="navbar navbar-ligth sticky-top bg-light flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="#"><h2>Double V Parthners</h2></a>
+     
+  
+    <div class="navbar-nav">
+        <div class="text-center pt-4 text-muted">No tienes cuenta? <a id="forgot" href="#" routerLink="/signup">¡Registrate!</a> </div>
+    </div>
+  </header>
+  
 <div class="outer">
   <div class="container">
       <div class="row">
@@ -16,9 +26,8 @@
                               <div class="input-field" [class.error]="loginForm.controls['password'].dirty && loginForm.hasError('required','password')"> <span class="fa fa-lock px-2"></span> <input formControlName="password" [type]="type" placeholder="Password"> <button type="button" (click)="hideShowPass()" class="bg-white text-muted"> <span class="fa {{eyeIcon}}"></span> </button>                                    </div>
                           </div>
                           <small *ngIf="loginForm.controls['password'].dirty && loginForm.hasError('required','password')" class="text-danger">*Contraseña requerida*</small>
-                          <div class="form-inline fr mt-4"> <a id="forgot" data-bs-toggle="modal" data-bs-target="#exampleModal" class="font-weight-bold">olvidaste la contraseña?</a> </div>
-                          <button type="submit" class="btn btn-primary btn-block mt-4 w-100">Ingresa</button>
-                          <div class="text-center pt-4 text-muted">No tienes cuenta? <a id="forgot" href="#" routerLink="/signup">Registro</a> </div>
+                           <button type="submit" class="btn btn-primary btn-block mt-4 w-100">Ingresa</button>
+                          
                       </form>
                   </div>
                  
