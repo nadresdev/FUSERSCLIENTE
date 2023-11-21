@@ -11,6 +11,7 @@ describe('Service: Api', () => {
   });
 
   it('should ...', inject([ApiService], (service: ApiService) => {
-    expect(service).toBeTruthy(); 
+    expect(service).toBeTruthy();  
+    
   }));
 });
